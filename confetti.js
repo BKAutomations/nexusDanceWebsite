@@ -24,7 +24,7 @@ window.addEventListener('resize', () => {
 });
 
 const confettiCount = 60;
-const confettiColors = ['#d6c08d', '#fffbe6', '#bfa76a', '#fff8d1'];
+const confettiColors = ['#f0c44c', '#ffe9a1', '#e6b840', '#fff4d1'];
 const confetti = [];
 
 function randomBetween(a, b) {
@@ -54,7 +54,7 @@ function drawConfetti() {
         ctx.globalAlpha = c.opacity;
         ctx.ellipse(c.x, c.y, c.r, c.r * 0.4, c.tilt, 0, 2 * Math.PI);
         ctx.fillStyle = c.color;
-        ctx.shadowColor = '#fffbe6';
+        ctx.shadowColor = '#ffe9a1';
         ctx.shadowBlur = 8;
         ctx.fill();
         ctx.restore();
